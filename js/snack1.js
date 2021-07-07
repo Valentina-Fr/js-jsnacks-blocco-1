@@ -8,16 +8,22 @@ Esegui questo programma in due versioni, con il for e con il while.
 var sum = 0;
 
 //Versione con for
-/* for (var i = 0; i < 5; i++) {
-    var userNumber = parseInt(prompt("Inserisci un numero", "1"));
-    sum += userNumber;
-} */
+for (var i = 0; i < 5; i++) {
+    var userNumber = parseInt(prompt("Inserisci un numero " + (i + 1).toString(), "1"));
+    if (!isNaN(userNumber)) {
+        sum += userNumber;
+    } else {
+        i--;
+    }
+}
 
 //Versione con while
-var i = 0;
+/* var i = 0;
 while (i < 5) {
-    var userNumber = parseInt(prompt("Inserisci un numero", "1"));
-    sum += userNumber;
-    i++;
-}
+    var userNumber = parseInt(prompt("Inserisci un numero " + (i + 1).toString(), "1"));
+    if (!isNaN(userNumber)) {
+        sum += userNumber;
+        i++;
+    }
+} */
 console.log(sum);
