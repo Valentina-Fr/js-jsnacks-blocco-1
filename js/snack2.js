@@ -4,7 +4,7 @@ se è dispari stampa il numero successivo.
 */
 
 //Dichiarazione variabile
-var userNumber
+var userNumber;
 
 //Chiedere numero all'utente
 do { 
