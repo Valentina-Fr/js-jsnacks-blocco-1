@@ -3,9 +3,12 @@ SNACK 2: Chiedi un numero all'utente, se è pari stampa il numero,
 se è dispari stampa il numero successivo.
 */
 
+//Dichiarazione variabile
+var userNumber
+
 //Chiedere numero all'utente
 do { 
-var userNumber = parseInt(prompt("Inserisci un numero"));
+userNumber = parseInt(prompt("Inserisci un numero"));
 } while (isNaN(userNumber) || userNumber <= 0);
 
 //Stabilire se è pari o dispari e stampare
