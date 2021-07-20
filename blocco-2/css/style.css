@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+}
+
+#alert {
+    color: red;
+}
+
+#js-table th, #js-table td {
+    border: 1px solid black;
+}
